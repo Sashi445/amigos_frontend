@@ -1,0 +1,149 @@
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+.postbox{
+    position: relative;
+    width: 500px;
+    border-radius: 5px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+.head{
+    display: flex;
+    justify-content:start;
+    align-items: center;
+}
+.hm{
+    display: flex;
+    flex-direction: column;
+}
+.dtime{
+    font-size: 12px;
+}
+.propic{
+    padding: 10px;
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.bod{
+    display: block;
+}
+.desc{
+    margin: 5px;
+    max-height: 100px;
+    overflow-y: auto;
+    padding-left: 10px;
+}
+.bod img{
+    object-fit: cover;
+    width: calc(100% - 10px);
+    height: 400px;
+    margin: 0px 5px;
+}
+
+.lcs{
+    display: flex;
+}
+
+.lcsbut{
+    flex-grow: 1;
+}
+
+.but{
+    padding: 10px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition-duration: 0.2s;
+}
+.but:hover{
+    background-color: rgb(153, 209, 245);
+}
+.but:active{
+    background-color: rgb(116, 202, 254);
+    color: white;
+}
+/*poll*/
+.options{
+    padding: 5px 5px 5px 10px;
+    display: block;
+}
+.prog{
+    margin: 5px 0px;
+    padding: 0px 10px;
+    background-color: rgb(61, 84, 102);
+    border-radius: 5px;
+}
+.prog p{
+    float: left;
+}
+.p1{
+    width: 40%;
+}
+.p2{
+    width: 80%;
+}
+.p3{
+    width: 60%;
+}
+
+/*write*/
+/* Style the tab */
+textarea{
+    resize: none;
+    outline: none;
+    border: none;
+}
+
+.tab {
+    overflow: hidden;
+    width: 410px;
+}
+
+.tab button{
+    float: left;
+}
+::placeholder {
+    color: var(--c, gray);
+}
+
+.active {
+    background-color: rgb(116, 202, 254);;
+}
+
+.desc{
+    outline: none;
+    flex-grow: 1;
+    /* border: none; */
+}
+  /* Style the tab content */
+  .tabcontent {
+    padding: 5px;
+    border: 1px solid #ccc;
+    display: flex;
+    width: 400px;
+  }
+
+
+/*profile*/
+
+.grid-container{
+    display: grid;
+    grid-template-columns: 20vw 40vw;
+    grid-template-rows: 300px auto;
+    justify-content: center;
+}
+.pic{
+    padding: 10px;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    justify-self: center;
+    align-self: center;
+}
+.showposts{
+    justify-self: center;
+}
