@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Write</title>
+</head>
+<body>
+    <div class="tab">
+        <button class="tablinks but" onclick="openCity(event, 'Post')" id="defaultOpen">Post</button>
+        <button class="tablinks but" onclick="openCity(event, 'Poll')">Poll</button>
+        <button class="tablinks but" onclick="openCity(event, 'Confession')">Confession</button>
+    </div>
+
+    <div id="Post" class="tabcontent">
+        <textarea name="" id="" cols="52" rows="6" placeholder="Write Something"></textarea>
+            <input type="submit" class="but" value="Add image">
+            <input type="submit" class="but" value="Post">
+    </div>
+
+    <div id="Poll" class="tabcontent"> 
+        <input type="text" name="desc" id="desc" class="desc" placeholder="Write Something">
+        <input id="add" type="button" class="but" value="Add Option" onclick="addOpt()">
+        <input type="submit" class="but" value="Post">
+    </div>
+
+    <div id="Confession" class="tabcontent">
+        <textarea name="" id="" cols="52" rows="6" placeholder="Write your Confession"></textarea>
+        <input type="submit" class="but" value="Post">
+    </div>
+
+<script>
+document.getElementById("defaultOpen").click();
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+function addOpt(){
+    var itm = document.createElement("input");
+    itm.type = "text";
+    itm.style.padding = "10px";
+    itm.style.borderRadius = "5px";
+    itm.style.background = "rgb(153, 209, 245)";
+    itm.style.outline = "none";
+    itm.style.border = "none";
+    itm.style.margin = "5px";
+    itm.placeholder = "Write your option";
+    itm.style.flexGrow = "1";
+    itm.style.setProperty("--c","white");
+    document.getElementById("Poll").insertBefore(itm,document.getElementById("add"));
+}
+document.getElementById("add").click();
+
+</script>
+   
+</body>
+</html>
