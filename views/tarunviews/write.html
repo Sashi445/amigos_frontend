@@ -8,9 +8,9 @@
 </head>
 <body>
     <div class="tab">
-        <button class="tablinks but" onclick="openCity(event, 'Post')" id="defaultOpen">Post</button>
-        <button class="tablinks but" onclick="openCity(event, 'Poll')">Poll</button>
-        <button class="tablinks but" onclick="openCity(event, 'Confession')">Confession</button>
+        <button class="tablinks but" onclick="options(event, 'Post')" id="default">Post</button>
+        <button class="tablinks but" onclick="options(event, 'Poll')">Poll</button>
+        <button class="tablinks but" onclick="options(event, 'Confession')">Confession</button>
     </div>
 
     <div id="Post" class="tabcontent">
@@ -20,7 +20,7 @@
     </div>
 
     <div id="Poll" class="tabcontent"> 
-        <input type="text" name="desc" id="desc" class="desc" placeholder="Write Something">
+        <input type="text" name="polldesc" id="polldesc" class="polldesc" placeholder="Write Something">
         <input id="add" type="button" class="but" value="Add Option" onclick="addOpt()">
         <input type="submit" class="but" value="Post">
     </div>
@@ -31,34 +31,36 @@
     </div>
 
 <script>
-document.getElementById("defaultOpen").click();
-function openCity(evt, cityName) {
-  var i, tabcontent, tablinks;
-  tabcontent = document.getElementsByClassName("tabcontent");
-  for (i = 0; i < tabcontent.length; i++) {
-    tabcontent[i].style.display = "none";
-  }
-  tablinks = document.getElementsByClassName("tablinks");
-  for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].className = tablinks[i].className.replace(" active", "");
-  }
-  document.getElementById(cityName).style.display = "block";
-  evt.currentTarget.className += " active";
+document.getElementById("default").click();
+function options(evt,cityName) {
+    var i, tabcontent, tablinks;
+    tablinks = document.getElementsByClassName("tablinks");
+    for(j = 0; j < tablinks.length ; j++){
+        tablinks[j].className = tablinks[j].className.replace(" active", "");
+    }
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    document.getElementById(cityName).style.display = "flex";
+    evt.currentTarget.className += " active";
 }
 
 function addOpt(){
+    var m= document.createElement("div");
     var itm = document.createElement("input");
     itm.type = "text";
-    itm.style.padding = "10px";
-    itm.style.borderRadius = "5px";
+    itm.style.width = "100%";
+    // itm.style.padding = "10px";
+    // itm.style.borderRadius = "5px";
     itm.style.background = "rgb(153, 209, 245)";
     itm.style.outline = "none";
     itm.style.border = "none";
-    itm.style.margin = "5px";
+    // itm.style.margin = "5px";
     itm.placeholder = "Write your option";
-    itm.style.flexGrow = "1";
     itm.style.setProperty("--c","white");
-    document.getElementById("Poll").insertBefore(itm,document.getElementById("add"));
+    m.appendChild(itm);
+    document.getElementById("Poll").insertBefore(m,document.getElementById("add"));
 }
 document.getElementById("add").click();
 
