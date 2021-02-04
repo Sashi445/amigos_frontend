@@ -13,7 +13,7 @@
    Moreover,this is mainly focused on promoting new ideas and creating their own space to work together(alike goals), giving room to write their own experienes regarding placements work and projects and creative idea polls.
    Along with these things for making people involved into this and  wide spread the innovative ideas among masses in the community through introducing feed where all the polls,posts,etc will be displayed.
    
-   
+   **The whole idea of this application revolves around finding collabarators for ideas of an individual.**
 ## Features
 
 * Recommending new ideas,projects,experiences to the bulk linking with their interest and passion towards their choice.
@@ -24,7 +24,6 @@
 * For every post that involves polls, image,project ideas,etc will have people to like and comment
 * Portfolio of a person if he/she shares which help many people to look into thier achievments and can contact them to involve in their project ideas.
 * Messaging and forming groups 
-
 
 ## Category:
 * Web Application

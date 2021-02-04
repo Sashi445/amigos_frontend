@@ -77,10 +77,14 @@
 }
 
 .container input{
+<<<<<<< HEAD
     display: block;
     padding: 10px 5px;
+=======
+    /* padding: 10px 50px; */
+>>>>>>> cd5e2412113f8e4194aec2c19510324439afbd2f
     /* margin: 10px; */
-    margin: 10px 0px;
+    /* margin: 10px 0px; */
     border: grey solid 1px;
     border-radius: 3px;
     width: 100%;
