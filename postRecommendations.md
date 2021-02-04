@@ -1,6 +1,9 @@
 # Post Recommendations
 ## Overview
 ---
+![](images/Project_Database.png)
+
+
 ### Regarding the algorithm behind how post recommendation works
 ___
 ## Tables:
