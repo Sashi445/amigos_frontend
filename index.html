@@ -3,50 +3,113 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet"
           href="https://fonts.googleapis.com/css?family=Roboto">
+          <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"> -->
+          <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <title>Project Views</title>
 </head>
 <body>
     <header>
-        <h1>Main Components</h1>
+        <nav class="navbar navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#" style="font-size: 30px; margin-left: 70px; text-align: center;">IdeaPile</a>
+              </div>
+          </nav>
     </header>
     <main>
-        <div>
-            <a href="./views/index.html">
-                <h3>Login Page</h3>
-            </a>
-        </div>
-        <div>
-            <a href="./views/post.html">
-                <h3>Post</h3>
-            </a>
-        </div>
-        <div>
-            <a href="./views/tarunviews/post.html">
-                <h3>Tarun Post</h3>
-            </a>
-        </div>
-        <div>
-            <a href="./views/tarunviews/poll.html">
-                <h3>Poll</h3>
-            </a>
-        </div>
-        <div>
-            <a href="./views/tarunviews/profile.html">
-                <h3>Profile</h3>
-            </a>
-        </div>
-        <div>
-            <a href="./views/tarunviews/write.html">
-                <h3>Write Post</h3>
-            </a>
-        </div>
-        <div>
-            <a href="./profile.html">
-            <h3>Profile</h3></a>
-        </div>
+        <div class="container" style="margin: 20px;">
+            <div class="row">
+              <div class="col">
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                      <h5 class="card-title">Login Page</h5>
+                      <h6 class="card-subtitle mb-2 text-muted">View of the login page</h6>
+                      <a href="colorscheme/index.html" class="card-link">View Page</a>
+                    </div>
+                  </div>
+              </div>
+              <div class="col">
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                      <h5 class="card-title">Profile Page</h5>
+                      <h6 class="card-subtitle mb-2 text-muted">View of the Profile page</h6>
+                      <a href="profile.html" class="card-link">View Page</a>
+                    </div>
+                  </div>
+              </div>
+              <div class="col">
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                      <h5 class="card-title">Markdown Editor</h5>
+                      <h6 class="card-subtitle mb-2 text-muted">View of the markdown edito</h6>
+                      <a href="md_editor.html" class="card-link">View Page</a>
+                    </div>
+                  </div>
+              </div>
+              <div class="col">
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                      <h5 class="card-title">Documentation</h5>
+                      <h6 class="card-subtitle mb-2 text-muted">Contains the documentation of the app</h6>
+                      <a href="https://github.com/Sashi445/amigos_frontend/blob/master/documentation.md" class="card-link">View Page</a>
+                    </div>
+                  </div>
+              </div>
+              <div class="col">
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                      <h5 class="card-title">Presentation</h5>
+                      <h6 class="card-subtitle mb-2 text-muted">Presentation</h6>
+                      <a href="#" class="card-link">View Page</a>
+                    </div>
+                  </div>
+              </div>
+            </div>
+          </div>
     </main>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
 </body>
 </html>
+
+
+<!-- <nav>
+            <div class="nav-wrapper">
+              <a href="#" class="brand-logo" style="margin-right: 100px;">IdeaPile</a>
+              <ul id="nav-mobile" class="right hide-on-med-and-down">
+              </ul>
+            </div>
+          </nav>
+        <div class="row">
+            <div class="col s12 m6">
+              <div class="card blue-grey darken-1">
+                <div class="card-content white-text">
+                  <span class="card-title">Login Page</span>
+                </div>
+                <div class="card-action">
+                  <a href="colorscheme/index.html">View Page</a>
+                </div>
+              </div>
+              <div class="card blue-grey darken-1">
+                <div class="card-content white-text">
+                  <span class="card-title">MarkDown Editor</span>
+                </div>
+                <div class="card-action">
+                  <a href="md_editor.html">View Page</a>
+                </div>
+              </div>
+            </div>
+            <div class="col s12 m6">
+                <div class="card blue-grey darken-1">
+                  <div class="card-content white-text">
+                    <span class="card-title">Profile Page</span>
+                  </div>
+                  <div class="card-action">
+                    <a href="profile.html">View Page</a>
+                  </div>
+                </div>
+              </div>
+          </div>
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script> -->
