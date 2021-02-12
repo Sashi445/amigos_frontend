@@ -1,7 +1,7 @@
 # Documentation
 
 ## Title:
-
+> IdeaPile
 
 ## Idea/Problem Statement:
 >  To create an idea and thought sharing platform for a community.
@@ -10,7 +10,7 @@
 
 ## Background:
    
-   An individual can have a lot of ideas and eventually might fail to execute them due to various reasons. One such reason would be lack of people who really can contribute to his work and make it worthy or make it popular.
+   An individual can have a lot of ideas and eventually might fail to execute them due to various reasons. One such reason would be the lack of people who really can contribute to his work and make it worthy or make it popular.
    
    For Instance, There might be a guy who is really interested in film making and wants to make a short film in such a scenario he might need a crew with similar interests or work experiences in the same community(university).
    So, it would be great if we have a platform where one can expose a small gist of their ideas and find people who really can contribute to his/her ideas and bring them to life.
@@ -31,24 +31,24 @@
 * As part of the community, they can express their thoughts, confessions and conduct polls on various aspects. **(Post Content)** 
 * Users will receive posts according to their interests **(Post Recommendation Algorithm)**.
 * User will be able to react and comment on other people's content, the people who he/she follows **(Responding to other's content)**. 
-* User can form a workspace for people who reacted to his idea potentially these are the people whom the user feels are worthy enough for contributing to his/her idea.**(Collaborator clustering and evaluation, WorkSpace Creation)**
+* User can form a workspace for people who reacted to his idea, potentially these are the people whom the user feels are worthy enough for contributing to his/her idea.**(Collaborator clustering and evaluation, WorkSpace Creation)**
 * The evaluation of collaborators is based on the responses of the form given by the idea holder. **(Collaborator Evaluation)**
 * The main features of the workspace are group chats, creating notes, assigning tasks to the members of the workspace, and so on. **(Collaborator Clustering and Workspace Creation)**
 
 ### Tasks based on features:
-1. Database Design and making models.
-2. Authentication and Profile Creation.
-3. Interfaces for content creation.
+1. Database Design and making models
+2. Authentication and Profile Creation
+3. Interfaces for content creation
    - Polls, Confessions, Image with caption content (UI design and functionality)
    - Markdown editor for the user to be able to publish ideas and blogs.
 4. An interface where the user can send friend requests and accept other requests.
-5. Connecting the blocks made so far and restricting access to the pages accordingly(since every user cannot access every other user content).
-6. Interface where user can analyze the statistics(reach) of his content and a notifications panel.
+5. Connecting the blocks made so far and restricting access to the pages accordingly(since every user cannot access every other user content)
+6. Interface where user can analyze the statistics(reach) of his content and a notifications panel
 7. Recommendation Algorithms
    - Post Recommendations
-   - Grouping people based on their interests.
+   - Grouping people based on their interests
    - Running statistics
-8. Collaborator clustering and workspace creation.
+8. Collaborator clustering and workspace creation
 9. Workspace Features:
    - Group chats
    - Creating tasks for individuals
@@ -81,11 +81,8 @@
 |---|---|---|
 |Sashidhar Motte | S20190010123| Project management, UI/UX Design, Part of Algorithm and Database Design, Backend |
 |Sree Charan P| S20190010146| Project management, Frontend and part of Algorithm and Database Design |
-|Charan Surya Sajja | S20190010156 | Frontend, Part of UI/UX design |
-|Sai Tarun Sanagapati| S20190010157 | Frontend and Backend |
+|Charan Surya Sajja | S20190010156 | Frontend, Part of UI/UX design, Part of Algorithm Design |
+|Sai Tarun Sanagapati| S20190010157 | Frontend and, Backend |
 |Bharath Dasyam | S20190010041 | Frontend, Part of Algorithm and Database Design |
 
 ---
-
-
-
