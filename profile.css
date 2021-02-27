@@ -10,7 +10,8 @@
 }
 
 .wrapper{
-    width: 100%;
+    width: 80%;
+    margin: auto;
     padding: 5px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -43,7 +44,8 @@
 
 .profileimage img{
     border-radius: 50%;
-    width: 70%;
+    width: 200px;
+    height: 200px;
     object-fit: scale-down;
 }
 
