@@ -28,11 +28,13 @@ main {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  width: 100%;
 }
 
 .card {
   background-color: white;
   max-width: 50%;
+  width: 100%;
   padding: 20px;
   margin-top: 5px;
   border-radius: 5px;
