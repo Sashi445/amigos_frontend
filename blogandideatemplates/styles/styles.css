@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+* {
+  padding: 0px;
+  margin: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+header {
+  min-height: 8vh;
+  background-color: orange;
+}
+
+main {
+  height: 92vh;
+  background-color: whitesmoke;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.card {
+  background-color: white;
+  max-width: 50%;
+  padding: 20px;
+  margin-top: 5px;
+  border-radius: 5px;
+}
+
+.card .card_top, .card .card_body, .card .author, .card .card_bottom {
+  margin: 13px 0px;
+  padding: 0px;
+}
+
+.card .card_top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.card .card_top h4 {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  font-size: 19px;
+  font-family: 'Poppins';
+}
+
+.card .card_top i {
+  font-size: 27px;
+  color: blue;
+}
+
+.card .author {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card .author img {
+  max-height: 45px;
+  -o-object-fit: scale-down;
+     object-fit: scale-down;
+  border-radius: 50%;
+}
+
+.card .author .info {
+  margin: 0px 10px;
+}
+
+.card .author .info h4 {
+  font-size: 13px;
+}
+
+.card .author .info p {
+  font-size: 6px;
+}
+
+.card .card_bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.card .card_bottom i {
+  margin: 0px 7px;
+  font-size: 18px;
+}
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+header{
+    min-height: 8vh;
+    background-color: orange;
+}
+
+main{
+    height: 92vh;
+    background-color: whitesmoke;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.card{
+    background-color: white;
+    max-width: 50%;
+    padding: 20px;
+    margin-top: 5px;
+    border-radius: 5px;
+    .card_top, .card_body, .author, .card_bottom{
+        margin: 13px 0px;
+        padding: 0px;
+    }
+    .card_top{
+        display: flex;
+        align-items: flex-start;
+        h4{
+            flex-grow: 1;
+            font-size: 19px;
+            font-family: 'Poppins';
+        }
+        i{
+            font-size: 27px;
+            color: blue;
+        }
+    }
+    .author{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        img{
+            max-height: 45px;
+            object-fit: scale-down;
+            border-radius: 50%;
+        }
+        .info{
+            margin: 0px 10px;
+            h4{
+                font-size: 13px;
+            }
+            p{
+                font-size: 6px;
+            }
+        }
+    }
+    .card_bottom{
+        display: flex;
+        justify-content: flex-end;
+        i{
+            margin: 0px 7px;
+            font-size: 18px;
+        }
+    }
+}

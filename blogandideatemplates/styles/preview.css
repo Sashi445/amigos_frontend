@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+* {
+  padding: 0px;
+  margin: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+header, footer {
+  min-height: 8vh;
+}
+
+header {
+  background-color: orange;
+}
+
+body {
+  background-color: whitesmoke;
+}
+
+main {
+  background-color: white;
+  max-width: 75%;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 20px;
+}
+
+main .options {
+  margin: 20px;
+  text-align: end;
+}
+
+main .options i {
+  font-size: 20px;
+}
+
+.author_info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 20px 0px;
+}
+
+.author_info img {
+  max-height: 60px;
+  margin: 0px;
+  border-radius: 50%;
+}
+
+.author_info .info {
+  vertical-align: auto;
+  margin: 0px 20px;
+  line-height: 70%;
+}
+
+.preview {
+  margin: auto;
+  background-color: white;
+  min-height: 90vh;
+}
+
+.title {
+  font-family: 'Poppins';
+}
+
+.preview blockquote {
+  margin: 10px 0px;
+  border-left: 7px solid grey;
+  background-color: #e7e6e1;
+  padding: 11px 10px;
+  border-radius: 2px;
+  font-family: 'OpenSans' sans-serif;
+}
+
+.preview a {
+  text-decoration: none;
+  color: #428bca;
+}
+
+.preview h1, h2, h3, h4, h5, h6 {
+  font-family: 'Poppins', sans-serif;
+  margin: 10px 0px;
+}
+
+.preview p, .preview blockquote {
+  font-family: 'Roboto', sans-serif;
+}
+
+.preview img {
+  display: block;
+  margin: auto;
+}
+
+.preview hr {
+  margin: 10px 0px;
+}
+
+ul ol, ul {
+  margin-left: 30px;
+}
+
+ol ul, ol {
+  margin-left: 30px;
+}
+
+code {
+  color: white;
+  font-family: 'Roboto Mono', monospace;
+}
+
+pre .code_block {
+  border-radius: 3px;
+  background-color: #000a21;
+  color: #d36968;
+  padding: 10px 13px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 10px 0px;
+}
+
+th {
+  background-color: black;
+  color: white;
+}
+
+td {
+  background-color: #e7e6e1;
+}
+
+td, th {
+  padding: 0.5rem;
+  text-align: start;
+}
+/*# sourceMappingURL=preview.css.map */

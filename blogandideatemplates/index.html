@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+    <title>Blog Idea Template!!</title>
+</head>
+<body>
+    <header></header>
+    <main>
+        <div class="card">
+            <div class="card_top">
+                <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, blanditiis!</h4>
+                <i class="far fa-lightbulb"></i>
+            </div>
+            <div class="author">
+                <img src="https://picsum.photos/200" alt="AuthorImage">
+                <div class="info">
+                    <h4>Steve Jobs</h4>
+                    <p>Feb 19, 2021</p>
+                </div>
+            </div>
+            <div class="card_body">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, alias. Ad libero accusamus debitis, veniam sed assumenda labore rem fugit nam provident exercitationem culpa expedita quae inventore illum veritatis perspiciatis.</p>
+            </div>
+            <div class="card_bottom">
+                <i class="far fa-heart"></i>
+                <i class="far fa-comment"></i>
+                <i class="fas fa-share"></i>
+                <i class="far fa-bookmark"></i>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card_top">
+                <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, blanditiis!</h4>
+                <i class="fab fa-blogger"></i>
+            </div>
+            <div class="author">
+                <img src="https://picsum.photos/200" alt="AuthorImage">
+                <div class="info">
+                    <h4>Steve Jobs</h4>
+                    <p>Feb 19, 2021</p>
+                </div>
+            </div>
+            <div class="card_body">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, alias. Ad libero accusamus debitis, veniam sed assumenda labore rem fugit nam provident exercitationem culpa expedita quae inventore illum veritatis perspiciatis.</p>
+            </div>
+            <div class="card_bottom">
+                <div class="like">
+                    <i class="far fa-heart"></i>
+                </div>
+                <i class="far fa-comment"></i>
+                <i class="fas fa-share"></i>
+                <i class="far fa-bookmark"></i>
+            </div>
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+    <script>
+        const likeButton = document.querySelector('.like')
+        console.log(likeButton)
+        toggle = false;
+        likeButton.addEventListener('click', function(){
+            console.log('clicked')
+            const iElement = likeButton.querySelector('i')
+            if(!toggle){
+                iElement.className = 'fas fa-heart'
+                this.style.color = 'red'
+            }else{
+                iElement.className = "far fa-heart"
+                this.style.color = 'black'
+            }
+            toggle = !toggle
+        })
+    </script>
+</body>
+</html>
