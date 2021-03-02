@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Post</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+</head>
+<body>
+    <script>
+        optcnt = 0;
+        window.onload = function(){
+            document.getElementById("default").click();
+        }
+
+        function options(evt,tab) {
+            tabnames = ["Photo","Confession","Poll","Idea","Blog"];
+            images = {
+                "Photo":"<i class='fa fa-photo'></i> ",
+                "Confession":"<i class='fa fa-heart'></i> ",
+                "Poll":"<i class='fa fa-tasks'></i> ",
+                "Idea":"<i class='fa fa-lightbulb-o'></i> ",
+                "Blog":"<i class='fa fa-list'></i> ",
+                    };
+            var i, tabcontent, tablinks;
+            tablinks = document.getElementsByClassName("tablinks");
+            for(j = 0; j < tablinks.length ; j++){
+                tablinks[j].className = tablinks[j].className.replace(" active", "");
+                tablinks[j].innerHTML = tabnames[j];
+            }
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            document.getElementById(tab).style.display = "flex";
+            evt.currentTarget.className += " active";
+            evt.currentTarget.innerHTML = images[tab] + evt.currentTarget.innerHTML;
+        }
+        function addopt(){
+            if (optcnt<=1) {
+                event.preventDefault();
+                if(optcnt==1){
+                    document.getElementById("addoptions").disabled = true;
+                }
+                var y = document.createElement("DIV");
+                y.setAttribute("class","opt");
+                y.innerHTML = '<input type="text" class="opttext" placeholder="Your Option"><span class="optclose" onclick="removeOpt(this);"><i class="fa fa-close"></i></span>';
+                document.getElementById('options').append(y);
+                optcnt+=1;
+            }
+        }
+        function removeOpt(e){
+            optcnt-=1
+            console.log("Delete");
+            console.log(e);
+            var divi = e.parentNode;
+            divi.style.display = "none";
+            document.getElementById("addoptions").disabled = false;
+        }
+    </script>
+    <div class="tabmain">
+        <div class="tab">
+            <button class="tablinks btn" onclick="options(event,'Photo');" id="default">Photo</button>
+            <button class="tablinks btn" onclick="options(event,'Confession');" >Confession</button>
+            <button class="tablinks btn" onclick="options(event,'Poll');" >Poll</button>
+            <button class="tablinks btn" onclick="options(event,'Idea');">Idea</button>
+            <button class="tablinks btn" onclick="options(event,'Blog');" >Blog</button>
+        </div>
+    
+        <form action="" method="post" enctype="multipart/form-data" id="Photo" class="tabcontent">
+            <div class="form-group">
+                <textarea name="" id="" placeholder="Write Something.."></textarea>
+                <button class="secbtn"><i class="fa fa-upload"></i> Add image</button>
+                <input type="submit" class="postbtn" value="Post">
+            </div>
+        </form>
+
+        <form action="" method="post" id="Confession" class="tabcontent">
+            <div class="form-group">
+                <textarea name="" id="" placeholder="Write your confession.."></textarea>
+                <input type="submit" class="postbtn" value="Post">
+            </div>
+        </form>
+
+        <form action="" method="post" id="Poll" class="tabcontent">
+            <div class="form-group">
+                <input type="text" placeholder="What's your poll?" name="" id="">
+                <div id="options">
+                Options
+                    <div class="opt"><input type="text" class="opttext" placeholder="Your Option"></div>
+                    <div class="opt"><input type="text" class="opttext" placeholder="Your Option"></div>
+                </div>
+                <button class="secbtn" id="addoptions" onclick="addopt(); return false; "><i class="fa fa-chevron-circle-down"></i> Add option</button>
+                <input type="submit" class="postbtn" value="Post">
+            </div>
+        </form>
+        <div class="tabcontent" id="Idea">Idea</div>
+        <div class="tabcontent" id="Blog">Blog</div>
+    </div>
+</body>
+</html>
